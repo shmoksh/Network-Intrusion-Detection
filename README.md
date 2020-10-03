@@ -11,8 +11,7 @@ Software to detect network intrusions protects a computer network from unauthori
 - Parameter tuning to compare model with different parameters.
     
 ## Comparsion of all models accuracy
-
-
+![alt text](https://github.com/shmoksh/Network-Intrusion-Detection/blob/main/Comparing_Accuracy.png)
 
 ## Challenges
 ### Balancing the data to improve the accuracy
@@ -20,6 +19,8 @@ While performing one-hot encoding on the categorical features, I found that the 
 
 ### Detecting the best feature for target variable
 Before I performed correlation analysis, I selected all the features for training Logistic Regression, and I obtained the precision and recall score 100%. This imposed that the model has been overfitting. So, I performed correlation analysis on the categorical and discrete features and removed highly correlating features. This time we increased the limit value to 0.9
+
+![alt text](https://github.com/shmoksh/Network-Intrusion-Detection/blob/main/Correlation%20Matrix.png)
 
 ### Parameter tuning to find the best neural network model
 I performed multiple neural network model by tuning the parameter i.e. Activation function and Optimizer.
